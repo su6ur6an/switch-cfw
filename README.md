@@ -16,6 +16,7 @@ This repo holds the complete SD-card release assembled from the component forks 
 | MissionControl | `ndeadly/MissionControl` | `su6ur6an/MissionControl` `custom` | `v0.16.1` |
 | sys-clk | `ppkantorski/sys-clk` | `su6ur6an/sys-clk` `custom` | `2.0.1+r28` |
 | Ultrahand-Overlay | `ppkantorski/Ultrahand-Overlay` | `su6ur6an/Ultrahand-Overlay` `custom` | `main` (includes `35e2fd1`) |
+| ovl-sysmodules | `ppkantorski/ovl-sysmodules` | `su6ur6an/ovl-sysmodules` `custom` | `master` |
 
 ## PRs / cherry-picks
 
@@ -23,6 +24,7 @@ This repo holds the complete SD-card release assembled from the component forks 
 - **Atmosphere PR #2912** (`13053be`): non-exFAT 23.5.0 nogc offset fix, cherry-picked onto `1.12.2`.
 - **Ultrahand `35e2fd1`**: post-`v2.5.4` home-press hold-duration fix. Already in `main`.
 - **TegraExplorer PR #106**: 1TB+ SD card support, cherry-picked onto `4.2.0`.
+- **ovl-sysmodules**: flat shared `libultrahand` symlink on `custom`.
 - Not used: TegraExplorer PR #111 (incomplete BDK rewrite); hekate PR #1247 only if the build fails.
 
 ## Libraries
@@ -49,4 +51,4 @@ No `prod.keys` or `title.keys` are included.
 
 ## Status
 
-Building the `custom` component branches for HOS 23.5.0. Release assembly pending.
+Custom component branches for HOS 23.5.0 are built and published. `release/` contains the assembled SD-card root, including `bootloader/hekate_ipl.ini`, `atmosphere/reboot_payload.bin`, `bootloader/payloads/fusee.bin`, and the Lockpick/TegraExplorer payloads.
